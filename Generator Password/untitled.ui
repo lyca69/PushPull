@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>328</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">   background-color: #1b1b2f; /* Dark background */
+    color: #ffffff; /* Default text color */
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinimumSize</enum>
+     </property>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">  color: #00d9ff; /* Neon cyan text */
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;</string>
+       </property>
+       <property name="text">
+        <string>Pilih panjang password dan karakter yang ingin disertakan</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QSpinBox" name="spinBox">
+       <property name="styleSheet">
+        <string notr="true">QSpinBox {
+    background-color: #0f0f14;
+    color: #00d9ff;
+    border: 2px solid #00d9ff;
+    border-radius: 8px;
+    padding: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+QSpinBox::up-button, QSpinBox::down-button {
+    background-color: #00d9ff;
+    border: none;
+    width: 16px;
+}
+QSpinBox::up-button:hover, QSpinBox::down-button:hover {
+    background-color: #005f80;
+}
+
+
+
+</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QCheckBox" name="checkBox">
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+    color: #00d9ff;
+    font-size: 14px;
+    spacing: 8px;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    background-color: #1b1b2f;
+    border: 2px solid #00d9ff;
+    border-radius: 4px;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #00d9ff;
+    border: 2px solid #ffffff;
+}
+
+QCheckBox::indicator:hover {
+    border: 2px solid #ffffff;
+}</string>
+       </property>
+       <property name="text">
+        <string>Huruf kecil (a-z)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QCheckBox" name="checkBox_2">
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+    color: #00d9ff;
+    font-size: 14px;
+    spacing: 8px;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    background-color: #1b1b2f;
+    border: 2px solid #00d9ff;
+    border-radius: 4px;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #00d9ff;
+    border: 2px solid #ffffff;
+}
+
+QCheckBox::indicator:hover {
+    border: 2px solid #ffffff;
+}</string>
+       </property>
+       <property name="text">
+        <string>Huruf besar (A-Z)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QCheckBox" name="checkBox_3">
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+    color: #00d9ff;
+    font-size: 14px;
+    spacing: 8px;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    background-color: #1b1b2f;
+    border: 2px solid #00d9ff;
+    border-radius: 4px;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #00d9ff;
+    border: 2px solid #ffffff;
+}
+
+QCheckBox::indicator:hover {
+    border: 2px solid #ffffff;
+}</string>
+       </property>
+       <property name="text">
+        <string>Angka (0-9)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QCheckBox" name="checkBox_4">
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+    color: #00d9ff;
+    font-size: 14px;
+    spacing: 8px;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    background-color: #1b1b2f;
+    border: 2px solid #00d9ff;
+    border-radius: 4px;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #00d9ff;
+    border: 2px solid #ffffff;
+}
+
+QCheckBox::indicator:hover {
+    border: 2px solid #ffffff;
+}</string>
+       </property>
+       <property name="text">
+        <string>Simbol (!@#$%)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QPushButton" name="pushButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #00d9ff;
+    color: #0f0f14;
+    border: 2px solid #00f0ff;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+QPushButton:hover {
+    background-color: #005f80;
+    color: #ffffff;
+}
+
+QPushButton:pressed {
+    background-color: #0088cc;
+    border: 2px solid #ffffff;
+}</string>
+       </property>
+       <property name="text">
+        <string>Generate</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="styleSheet">
+        <string notr="true">/* QLineEdit Styles */
+QLineEdit {
+    background-color: #0f0f14; /* Dark background for input */
+    color: #00d9ff; /* Neon cyan text color */
+    border: 2px solid #00d9ff; /* Neon border */
+    border-radius: 8px; /* Rounded corners for a smooth, modern look */
+    padding: 8px; /* Padding inside the input box */
+    font-size: 16px;
+    font-weight: bold;
+    selection-background-color: #005f80; /* Selection background for text */
+    selection-color: #ffffff; /* Color of selected text */
+}
+
+QLineEdit:hover {
+    border: 2px solid #ffffff; /* Change border to white on hover */
+}
+
+QLineEdit:focus {
+    border: 2px solid #00ffcc; /* Glowing effect for focused state */
+    background-color: #0f1f2f; /* Slightly brighter background when focused */
+}
+
+QLineEdit:disabled {
+    background-color: #1b1b2f; /* Darker background for disabled */
+    color: #555555; /* Greyed out text */
+    border: 2px solid #555555; /* Greyed out border */
+}
+</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #00d9ff;
+    color: #0f0f14;
+    border: 2px solid #00f0ff;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+QPushButton:hover {
+    background-color: #005f80;
+    color: #ffffff;
+}
+
+QPushButton:pressed {
+    background-color: #0088cc;
+    border: 2px solid #ffffff;
+}</string>
+       </property>
+       <property name="text">
+        <string>Salin ke Clipboard</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
